@@ -4,9 +4,17 @@
 .footer {
   padding: toRem(51) 0 toRem(54) 0;
   .icons {
-    span {
-      background-color: $text-black-700 !important;
+    a {
       margin-right: toRem(35);
+      
+      span {
+        background-color: $text-black-700 !important;
+        transition: all .3s ease;
+
+        &:hover {
+          background-color: $text-black-500 !important;
+        }
+      }
 
       &:last-child {
         margin-right: 0 !important;

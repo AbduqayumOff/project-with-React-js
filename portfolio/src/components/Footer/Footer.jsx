@@ -11,10 +11,18 @@ const Footer = () => {
       <div className={`text-center ${styles.footer}`}>
         <Row>
           <Col className={styles.icons}>
+            <a href="#">
             <Facebook />
+            </a>
+            <a href="#">
             <Instagram />
+            </a>
+            <a href="#">
             <Twitter />
+            </a>
+            <a href="#">
             <Linkedin />
+            </a>
           </Col>
         </Row>
         <Row>
