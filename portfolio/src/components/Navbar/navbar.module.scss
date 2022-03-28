@@ -1,0 +1,65 @@
+@import "../../styles/converterRem";
+@import "../../styles/breakpoint";
+@import "../../styles/variables";
+@import "../../styles/fonts";
+
+.navbar {
+  margin-top: toRem(27);
+  margin-bottom: toRem(140);
+  background-color: $color-white;
+
+  @include mobile {
+    margin-bottom: toRem(20);
+  }
+  @include tablet2 {
+    margin-bottom: toRem(30);
+  }
+}
+
+.navLink {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include tablet2 {
+      text-align: center;
+    }
+    @include mobile {
+      text-align: right;
+
+      li {
+        display: block !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+
+        &:nth-child(1) {
+          margin-top: 10px !important;
+        }
+      }
+    }
+    li {
+      display: inline-block;
+      a {
+        font-family: Heebo-Medium;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 29px;
+        color: $text-black-900 !important;
+      }
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        a {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+button:focus {
+  box-shadow: none !important;
+}

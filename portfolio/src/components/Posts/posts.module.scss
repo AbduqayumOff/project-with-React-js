@@ -1,0 +1,96 @@
+@import "../../styles/converterRem";
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/breakpoint";
+
+.wrapper {
+  padding: 27px 0 15px 0;
+  margin-top: toRem(71);
+  margin-bottom: toRem(15);
+
+  .rowHead {
+    margin-bottom: toRem(22);
+    h1 {
+      font-family: Heebo-Regular;
+      font-size: 22px;
+      line-height: 60px;
+      color: $text-black-700;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: Heebo-Regular;
+      font-size: 16px;
+      line-height: 24px;
+      color: $secondry;
+    }
+  }
+  .colCard {
+    margin-bottom: 32px;
+    @include mobile {
+      margin-bottom: 17px;
+    }
+    .box {
+      height: 100%;
+      padding: 24px;
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+      border-radius: 4px;
+
+      h2 {
+        font-family: Heebo-Bold;
+        font-size: 26px;
+        line-height: 38px;
+        color: $text-black-700;
+        margin-right: toRem(160);
+        margin-bottom: 17px;
+
+        @include tablet {
+          margin-right: 50px;
+        }
+        @include tablet2 {
+          margin-right: 0;
+          font-size: 20px;
+          line-height: 25px;
+        }
+        @include mobile {
+          font-size: 22px;
+        }
+      }
+      span {
+        display: inline-block;
+        font-family: Heebo-Regular;
+        font-size: 18px;
+        line-height: 26px;
+        color: $text-black-700;
+        margin-bottom: 21px;
+        &:nth-of-type(1) {
+          border-right: 1px solid $text-black-900;
+          padding-right: 26px;
+          margin-right: 26px;
+          @include tablet2 {
+            margin-right: 16px;
+          }
+        }
+        @include tablet2 {
+          font-size: 15px;
+        }
+      }
+
+      p {
+        font-family: Heebo-Regular;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-black-700;
+        margin-right: toRem(130);
+
+        @include tablet {
+          margin-right: 20px;
+        }
+        @include tablet2 {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

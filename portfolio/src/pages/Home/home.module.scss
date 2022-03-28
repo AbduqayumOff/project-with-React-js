@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+@import "../../styles/converterRem";
+@import "../../styles/breakpoint";
+
+.bg {
+  background-color: $cyan-500;
+}
+
+.title {
+  font-size: 22px;
+  line-height: 60px;
+  color: $text-black-700;
+  margin-bottom: 22px;
+}
+
+.center {
+  @include mobile {
+    text-align: center;
+  }
+}

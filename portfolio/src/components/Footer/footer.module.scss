@@ -1,0 +1,23 @@
+@import "../../styles/converterRem";
+@import "../../styles/variables";
+
+.footer {
+  padding: toRem(51) 0 toRem(54) 0;
+  .icons {
+    span {
+      background-color: $text-black-700 !important;
+      margin-right: toRem(35);
+
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  h1 {
+    color: $text-black-700;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: toRem(26);
+  }
+}

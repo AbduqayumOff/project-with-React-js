@@ -1,0 +1,44 @@
+@import "../styles/fonts";
+@import "../styles/converterRem";
+@import "../styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  h1 {
+    font-family: Heebo-Bold;
+    font-size: 44px;
+    line-height: 60px;
+    color: $text-black-700;
+    margin-bottom: toRem(55);
+  }
+}
+
+body {
+  font-family: Heebo-Regular, serif;
+  .icon {
+    width: toRem(24);
+    height: toRem(24);
+    display: inline-block;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: center;
+    vertical-align: middle;
+    background-color: $color-white;
+  }
+}

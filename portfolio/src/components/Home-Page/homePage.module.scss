@@ -1,0 +1,87 @@
+@import "../../styles/breakpoint";
+@import "../../styles/converterRem";
+@import "../../styles/fonts";
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.customRow {
+  h1 {
+    font-size: 44px;
+    font-family: Heebo-Bold;
+    color: $text-black-900;
+    margin-right: toRem(100);
+    line-height: 60px;
+    margin-bottom: toRem(40);
+  }
+
+  p {
+    font-family: Heebo-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-black-700;
+    margin-bottom: toRem(38);
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Heebo-Medium;
+    font-size: 20px;
+    line-height: 29px;
+    color: $color-white;
+    padding: 9px 20px 17px 20px;
+    background-color: $primary;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 243px;
+    box-shadow: -10px 13px 0 $cyan-500;
+    transition: all 0.2s ease;
+
+    &:hover {
+      box-shadow: unset;
+    }
+  }
+
+  .imgBox {
+    @include flex(unset, end);
+  }
+
+  @include tablet {
+    h1 {
+      margin-right: toRem(20);
+    }
+  }
+  @include tablet2 {
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-right: 0;
+      margin-bottom: toRem(10);
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: toRem(18);
+    }
+    a {
+      font-size: 18px;
+      line-height: 23px;
+      padding: 9px 15px 13px 15px;
+    }
+
+    .imgBox {
+      @include flex(unset, center);
+    }
+  }
+  @include tablet2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+
+    img {
+      margin-bottom: toRem(43);
+    }
+  }
+}

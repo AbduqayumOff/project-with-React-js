@@ -1,0 +1,41 @@
+@import "../../styles/converterRem";
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+.card {
+  h1 {
+    font-family: Heebo-Medium;
+    font-size: 30px;
+    line-height: 44px;
+    color: $text-black-700;
+    margin-bottom: 16px;
+  }
+
+  span {
+    display: inline-block;
+    font-family: Heebo-Regular;
+    font-size: 18px;
+    line-height: 26px;
+    color: $text-black-700;
+    margin-bottom: 15px;
+
+    &:nth-of-type(1) {
+      border-right: 1px solid #000000;
+      padding-right: 26px;
+      margin-right: 26px;
+    }
+    &:nth-of-type(2) {
+      color: $text-black-500;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-black-700;
+  }
+
+  hr {
+    margin-bottom: toRem(32);
+  }
+}
