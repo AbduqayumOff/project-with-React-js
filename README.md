@@ -1,2 +1,2 @@
-# project-with-React-js
+# project
 React-js, Firebase, Redux-toolkit, React-Bootstrap
